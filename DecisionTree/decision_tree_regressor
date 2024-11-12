@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="MedInc <= 5.086\nsquared_error = 1.337\nsamples = 16512\nvalue = 2.072", fillcolor="#f8deca"] ;
+1 [label="MedInc <= 3.074\nsquared_error = 0.834\nsamples = 13101\nvalue = 1.74", fillcolor="#fbeade"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AveRooms <= 4.314\nsquared_error = 0.561\nsamples = 6268\nvalue = 1.358", fillcolor="#fef8f4"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.679\nsamples = 2624\nvalue = 1.626", fillcolor="#fbeee4"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.387\nsamples = 3644\nvalue = 1.165", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="AveOccup <= 2.418\nsquared_error = 0.827\nsamples = 6833\nvalue = 2.09", fillcolor="#f8ddc9"] ;
+1 -> 5 ;
+6 [label="squared_error = 1.248\nsamples = 1755\nvalue = 2.736", fillcolor="#f3c5a4"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.488\nsamples = 5078\nvalue = 1.867", fillcolor="#fae5d6"] ;
+5 -> 7 ;
+8 [label="MedInc <= 6.888\nsquared_error = 1.218\nsamples = 3411\nvalue = 3.348", fillcolor="#eeae80"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="AveOccup <= 2.671\nsquared_error = 0.908\nsamples = 2384\nvalue = 2.954", fillcolor="#f1bd97"] ;
+8 -> 9 ;
+10 [label="squared_error = 1.012\nsamples = 860\nvalue = 3.518", fillcolor="#eda876"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.569\nsamples = 1524\nvalue = 2.636", fillcolor="#f4c9aa"] ;
+9 -> 11 ;
+12 [label="MedInc <= 7.815\nsquared_error = 0.74\nsamples = 1027\nvalue = 4.262", fillcolor="#e78d4b"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.73\nsamples = 400\nvalue = 3.769", fillcolor="#eb9f68"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.492\nsamples = 627\nvalue = 4.577", fillcolor="#e58139"] ;
+12 -> 14 ;
+}
